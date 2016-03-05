@@ -6,6 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 /**
+ * junitTest
  * Created by lyc on 16-3-4.
  */
 public class userTest {
