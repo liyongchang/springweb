@@ -6,7 +6,7 @@ import java.util.List;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
-import org.springframework.orm.hibernate3.HibernateCallback;
+import org.springframework.orm.hibernate4.HibernateCallback;
 
 public class PageHibernateCallback<T> implements HibernateCallback<List<T>>{
 	
@@ -27,8 +27,7 @@ public class PageHibernateCallback<T> implements HibernateCallback<List<T>>{
 
 
 
-	public List<T> doInHibernate(Session session) throws HibernateException,
-			SQLException {
+	public List<T> doInHibernate(Session session) throws HibernateException {
 		//1 执行hql语句
 		Query query = session.createQuery(hql);
 		//2 实际参数

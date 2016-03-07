@@ -1,8 +1,15 @@
 package com.shop.entity;
 
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
- * Created by lyc on 16-3-4.
+ * Created by lyc on 16-3-7.
  */
+
+@Entity(name="user")
 public class User {
     private int uid;
     private String username;
@@ -14,6 +21,8 @@ public class User {
     private Integer state;
     private String code;
 
+    @Id
+    @Column(name = "uid", nullable = false)
     public int getUid() {
         return uid;
     }
@@ -22,6 +31,8 @@ public class User {
         this.uid = uid;
     }
 
+    @Basic
+    @Column(name = "username", nullable = true, length = 255)
     public String getUsername() {
         return username;
     }
@@ -30,6 +41,8 @@ public class User {
         this.username = username;
     }
 
+    @Basic
+    @Column(name = "password", nullable = true, length = 255)
     public String getPassword() {
         return password;
     }
@@ -38,6 +51,8 @@ public class User {
         this.password = password;
     }
 
+    @Basic
+    @Column(name = "name", nullable = true, length = 255)
     public String getName() {
         return name;
     }
@@ -46,6 +61,8 @@ public class User {
         this.name = name;
     }
 
+    @Basic
+    @Column(name = "email", nullable = true, length = 255)
     public String getEmail() {
         return email;
     }
@@ -54,6 +71,8 @@ public class User {
         this.email = email;
     }
 
+    @Basic
+    @Column(name = "phone", nullable = true, length = 255)
     public String getPhone() {
         return phone;
     }
@@ -62,6 +81,8 @@ public class User {
         this.phone = phone;
     }
 
+    @Basic
+    @Column(name = "addr", nullable = true, length = 255)
     public String getAddr() {
         return addr;
     }
@@ -70,6 +91,8 @@ public class User {
         this.addr = addr;
     }
 
+    @Basic
+    @Column(name = "state", nullable = true)
     public Integer getState() {
         return state;
     }
@@ -78,6 +101,8 @@ public class User {
         this.state = state;
     }
 
+    @Basic
+    @Column(name = "code", nullable = true, length = 64)
     public String getCode() {
         return code;
     }

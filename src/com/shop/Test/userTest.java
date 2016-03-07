@@ -12,7 +12,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 public class userTest {
     private ApplicationContext context=new FileSystemXmlApplicationContext("web/WEB-INF/applicationContext.xml");
     @Test
-    public void  UserTest(){
+    public void  UserTestfindByUsername(){
         UserDao userDao=(UserDao) context.getBean("userDao");
         if(context.getBean("userControler").toString()==""){
             System.out.print("sss");
@@ -21,4 +21,5 @@ public class userTest {
         }
         userDao.findByUsername("aaa");
     }
+
 }
