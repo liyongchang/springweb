@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
- * Created by lyc on 16-3-7.
+ * Created by lyc on 16-3-8.
  */
 
 @Entity(name="user")
@@ -22,7 +22,7 @@ public class User {
     private String code;
 
     @Id
-    @Column(name = "uid", nullable = false)
+    @Column(name = "uid", nullable = false, insertable = true, updatable = true)
     public int getUid() {
         return uid;
     }
@@ -32,7 +32,7 @@ public class User {
     }
 
     @Basic
-    @Column(name = "username", nullable = true, length = 255)
+    @Column(name = "username", nullable = true, insertable = true, updatable = true, length = 255)
     public String getUsername() {
         return username;
     }
@@ -42,7 +42,7 @@ public class User {
     }
 
     @Basic
-    @Column(name = "password", nullable = true, length = 255)
+    @Column(name = "password", nullable = true, insertable = true, updatable = true, length = 255)
     public String getPassword() {
         return password;
     }
@@ -52,7 +52,7 @@ public class User {
     }
 
     @Basic
-    @Column(name = "name", nullable = true, length = 255)
+    @Column(name = "name", nullable = true, insertable = true, updatable = true, length = 255)
     public String getName() {
         return name;
     }
@@ -62,7 +62,7 @@ public class User {
     }
 
     @Basic
-    @Column(name = "email", nullable = true, length = 255)
+    @Column(name = "email", nullable = true, insertable = true, updatable = true, length = 255)
     public String getEmail() {
         return email;
     }
@@ -72,7 +72,7 @@ public class User {
     }
 
     @Basic
-    @Column(name = "phone", nullable = true, length = 255)
+    @Column(name = "phone", nullable = true, insertable = true, updatable = true, length = 255)
     public String getPhone() {
         return phone;
     }
@@ -82,7 +82,7 @@ public class User {
     }
 
     @Basic
-    @Column(name = "addr", nullable = true, length = 255)
+    @Column(name = "addr", nullable = true, insertable = true, updatable = true, length = 255)
     public String getAddr() {
         return addr;
     }
@@ -92,7 +92,7 @@ public class User {
     }
 
     @Basic
-    @Column(name = "state", nullable = true)
+    @Column(name = "state", nullable = true, insertable = true, updatable = true)
     public Integer getState() {
         return state;
     }
@@ -102,7 +102,7 @@ public class User {
     }
 
     @Basic
-    @Column(name = "code", nullable = true, length = 64)
+    @Column(name = "code", nullable = true, insertable = true, updatable = true, length = 64)
     public String getCode() {
         return code;
     }
