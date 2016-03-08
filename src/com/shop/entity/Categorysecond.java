@@ -5,7 +5,7 @@ import javax.persistence.*;
 /**
  * Created by lyc on 16-3-8.
  */
-@Entity
+@Entity(name = "categorysecond")
 public class Categorysecond {
     private int csid;
     private String csname;

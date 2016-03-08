@@ -4,8 +4,6 @@ package com.shop.service;
 import com.shop.entity.User;
 import com.shop.util.PageBean;
 
-import java.util.List;
-
 /**
  * Created by lyc on 16-3-3.
  */

@@ -8,7 +8,7 @@ import javax.persistence.Id;
 /**
  * Created by lyc on 16-3-8.
  */
-@Entity
+@Entity(name = "category")
 public class Category {
     private int cid;
     private String cname;

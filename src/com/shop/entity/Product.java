@@ -6,7 +6,7 @@ import java.sql.Timestamp;
 /**
  * Created by lyc on 16-3-8.
  */
-@Entity
+@Entity(name = "product")
 public class Product {
     private int pid;
     private String pname;

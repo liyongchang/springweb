@@ -1,16 +1,14 @@
 package com.shop.Test;
 
 import com.shop.dao.impl.UserDao;
+import com.shop.entity.Adminuser;
 import com.shop.entity.User;
+import com.shop.service.AdminuserService;
 import com.shop.service.UserService;
-import com.shop.service.impl.UserServiceImpl;
 import com.shop.util.UUIDUtils;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
-
-import javax.annotation.Resource;
 
 /**
  * junitTest

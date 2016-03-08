@@ -9,7 +9,7 @@ import java.sql.Timestamp;
 /**
  * Created by lyc on 16-3-8.
  */
-@Entity
+@Entity(name = "orders")
 public class Orders {
     private int oid;
     private Double total;

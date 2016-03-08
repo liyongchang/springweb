@@ -1,6 +1,7 @@
 package com.shop.dao.impl;
 
 import com.shop.dao.IUserDao;
+
 import com.shop.entity.User;
 import com.shop.util.PageHibernateCallback;
 import org.springframework.orm.hibernate4.support.HibernateDaoSupport;
